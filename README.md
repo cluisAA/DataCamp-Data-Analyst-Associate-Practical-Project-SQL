@@ -18,5 +18,5 @@
 - Always check column types: `SELECT pg_typeof(col) FROM table LIMIT 1;`
 - `ROUND(real, 2)` fails → use `ROUND(CAST(col AS numeric), 2)`
 - `weight` often has " grams" or junk → `REGEXP_REPLACE(weight, '[^0-9.]', '', 'g')`
-- Use `PERCENTILE_DISC(0.5)` for median (some exams prefer DISC over CONT)
+- Use `PERCENTILE_DISC(0.5)` for median 
 
